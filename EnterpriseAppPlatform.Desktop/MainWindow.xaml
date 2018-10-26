@@ -1,12 +1,22 @@
-﻿<Window x:Class="EnterpriseAppPlatform.Desktop.MainWindow"
+﻿<Window x:Name="Main" x:Class="EnterpriseAppPlatform.Desktop.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EnterpriseAppPlatform.Desktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Enterprise App Platform" Height="529" Width="1039" WindowStyle="None">
+    <Grid Background="#FF191919">
+        <Grid.RowDefinitions>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <TreeView HorizontalAlignment="Left" Margin="50,30,0,27" Width="200" Background="#FF151515" BorderBrush="{x:Null}"/>
+        <StatusBar Margin="-1,0,1,0" Background="#FF007ACC" Height="25" VerticalAlignment="Bottom"/>
+        <Rectangle Fill="#FF1F1F1F" Stroke="Black" Height="35" VerticalAlignment="Top"/>
+        <WrapPanel Height="30" Margin="155,0,96,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Label Content="AppRiver Customer Portal" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#00000000" Foreground="#FFB8B8B8" Height="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0"/>
+            <Label Content=" - DEVELOP" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#00000000" Foreground="#FF616161" Height="34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="11" Margin="0,2,0,0"/>
+        </WrapPanel>
     </Grid>
 </Window>
